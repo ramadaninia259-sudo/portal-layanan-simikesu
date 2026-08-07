@@ -1,0 +1,748 @@
+/* ===========================================================
+   PORTAL LAYANAN PUBLIK SIMIKESU
+   Design System v1.0
+=========================================================== */
+
+/* Google Font */
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FAFC;
+    color:#212529;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   COLOR
+=========================== */
+
+:root{
+
+    --primary:#0B3D91;
+    --secondary:#D4A017;
+    --white:#FFFFFF;
+    --light:#F8FAFC;
+    --dark:#212529;
+    --border:#DEE2E6;
+
+}
+
+/* ===========================
+   LINK
+=========================== */
+
+a{
+
+    text-decoration:none;
+
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+section{
+
+    padding:90px 0;
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.section-title{
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+.section-subtitle{
+
+    color:#6c757d;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px 28px;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--secondary);
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    padding:18px 0;
+
+}
+
+.nav-link{
+
+    font-weight:500;
+
+}
+
+.nav-link:hover{
+
+    color:var(--primary);
+
+}
+
+/* ===========================================
+   HERO
+=========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#F8FAFC,#EAF2FF);
+
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+.hero .lead{
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+}
+
+.hero img{
+
+    max-width:100%;
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* ===========================================
+   CONTAINER
+=========================================== */
+
+.container{
+
+    max-width:1200px;
+
+}
+
+/* ===========================================
+   IMAGE
+=========================================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ===========================================
+   TRANSITION
+=========================================== */
+
+*{
+
+    transition:.3s ease;
+
+}
+
+/* ===========================================
+   SECTION SPACING MOBILE
+=========================================== */
+
+@media(max-width:768px){
+
+section{
+
+    padding:70px 0;
+
+}
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:2.5rem;
+
+}
+
+.section-title{
+
+    font-size:1.8rem;
+
+}
+
+}
+
+/* ===========================================
+   SERVICES
+=========================================== */
+
+#services{
+
+    background:#FFFFFF;
+
+}
+
+.service-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.service-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#EEF4FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.service-icon i{
+
+    font-size:2rem;
+
+    color:var(--primary);
+
+}
+
+.service-card p{
+
+    color:#6c757d;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================
+   ABOUT
+=========================================== */
+
+#about{
+
+    background:#F8FAFC;
+
+}
+
+#about img{
+
+    border-radius:20px;
+
+}
+
+#about p{
+
+    line-height:1.9;
+
+    color:#6c757d;
+
+}
+
+#about h6{
+
+    margin-bottom:5px;
+
+}
+/* ===========================================
+   FLOW
+=========================================== */
+
+#flow{
+
+    background:#ffffff;
+
+}
+
+.flow-card{
+
+    padding:30px 15px;
+
+}
+
+.flow-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:#EEF4FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.flow-icon i{
+
+    font-size:2rem;
+
+    color:var(--primary);
+
+}
+
+.flow-number{
+
+    display:inline-block;
+
+    background:var(--secondary);
+
+    color:#fff;
+
+    padding:5px 15px;
+
+    border-radius:30px;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+.flow-card h6{
+
+    font-weight:600;
+
+}
+
+/* ===========================================
+   REQUIREMENTS
+=========================================== */
+
+#requirements{
+
+    background:#F8FAFC;
+
+}
+
+.requirement-card{
+
+    border:none;
+
+    border-radius:20px;
+
+}
+
+.requirement-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.requirement-card p{
+
+    color:#6c757d;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================
+   SCHEDULE
+=========================================== */
+
+#schedule{
+
+    background:#ffffff;
+
+}
+
+#schedule table{
+
+    margin-bottom:0;
+
+}
+
+#schedule th{
+
+    color:var(--primary);
+
+}
+
+#schedule td{
+
+    height:55px;
+
+    vertical-align:middle;
+
+    font-weight:500;
+
+}
+/* ===========================================
+   NEWS
+=========================================== */
+
+#news{
+
+    background:#F8FAFC;
+
+}
+
+.news-card{
+
+    overflow:hidden;
+
+    border:none;
+
+    border-radius:20px;
+
+}
+
+.news-card img{
+
+    height:230px;
+
+    object-fit:cover;
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.news-card .card-title{
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+}
+
+.news-card .card-text{
+
+    color:#6c757d;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================
+   GALLERY
+=========================================== */
+
+#gallery{
+
+    background:#ffffff;
+
+}
+
+.gallery-card{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.gallery-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.gallery-card:hover img{
+
+    transform:scale(1.08);
+
+}
+/* ===========================================
+   FAQ
+=========================================== */
+
+#faq{
+
+    background:#F8FAFC;
+
+}
+
+.accordion-item{
+
+    border:none;
+
+    overflow:hidden;
+
+}
+
+.accordion-button{
+
+    font-weight:600;
+
+    padding:20px;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:#EEF4FF;
+
+    color:var(--primary);
+
+    box-shadow:none;
+
+}
+
+.accordion-button:focus{
+
+    box-shadow:none;
+
+}
+
+.accordion-body{
+
+    color:#6c757d;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+#footer{
+
+    background:#0B3D91;
+
+    color:#ffffff;
+
+    padding:80px 0 30px;
+
+}
+
+#footer h5{
+
+    margin-bottom:20px;
+
+}
+
+#footer p{
+
+    color:rgba(255,255,255,.85);
+
+    line-height:1.8;
+
+}
+
+#footer ul{
+
+    padding:0;
+
+}
+
+#footer li{
+
+    list-style:none;
+
+}
+
+#footer a{
+
+    color:rgba(255,255,255,.85);
+
+    text-decoration:none;
+
+}
+
+#footer a:hover{
+
+    color:#D4A017;
+
+}
+
+#footer hr{
+
+    border-color:rgba(255,255,255,.2);
+
+}
+/* ===========================================
+   HERO TITLE
+=========================================== */
+
+.hero-title{
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    font-weight: 1000;
+
+    color: var(--primary);
+
+    line-height: 1.1;
+
+    white-space: nowrap;
+
+    letter-spacing: -2px;
+
+}
+/* ===========================================
+   NAVBAR
+=========================================== */
+
+.navbar{
+
+    padding:10px 0;
+
+    min-height:110px;
+
+}
+
+.navbar-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    text-decoration:none;
+
+}
+
+.navbar-logo{
+
+    width:95px;
+
+    height:95px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+.navbar-brand h3{
+
+    margin:0;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    line-height:1.1;
+
+}
+
+.navbar-brand small{
+
+    display:block;
+
+    font-size:.85rem;
+
+    color:#6c757d;
+
+    line-height:1.3;
+
+}
