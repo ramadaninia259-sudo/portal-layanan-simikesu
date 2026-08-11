@@ -1,174 +1,211 @@
-<!-- ===========================================
-     FAQ SECTION
-=========================================== -->
+<div class="container">
 
-<section id="faq">
+    <div class="text-center mb-5">
 
-    <div class="container">
+        <span class="badge bg-primary px-3 py-2 mb-3">
+            FAQ
+        </span>
 
-        <div class="text-center mb-5">
+        <h2 class="section-title">
+            Pertanyaan yang Sering Diajukan
+        </h2>
 
-            <span class="badge bg-primary px-3 py-2 mb-3">
-                FAQ
-            </span>
+        <p class="section-subtitle">
+            Temukan jawaban atas pertanyaan yang paling sering diajukan mengenai layanan SIMIKESU.
+        </p>
 
-            <h2 class="section-title">
-                Pertanyaan yang Sering Diajukan
+    </div>
+
+
+    <div class="accordion" id="faqAccordion">
+
+        <!-- FAQ 1 -->
+        <div class="accordion-item mb-3">
+
+            <h2 class="accordion-header" id="headingOne">
+
+                <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                >
+                    Bagaimana cara mengajukan layanan SI MIKE SU?
+                </button>
+
             </h2>
 
-            <p class="section-subtitle">
-                Temukan jawaban atas pertanyaan yang paling sering diajukan mengenai layanan SIMIKESU.
-            </p>
+
+            <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion"
+            >
+
+                <div class="accordion-body">
+
+                    Masyarakat dapat mengisi formulir permohonan secara online
+                    melalui Portal SIMIKESU kemudian melengkapi persyaratan
+                    yang diminta.
+
+                </div>
+
+            </div>
 
         </div>
 
-        <div class="accordion" id="faqAccordion">
 
-            <!-- FAQ 1 -->
-            <div class="accordion-item mb-3 border rounded-4">
+        <!-- FAQ 2 -->
+        <div class="accordion-item mb-3">
 
-                <h2 class="accordion-header">
+            <h2 class="accordion-header" id="headingTwo">
 
-                    <button class="accordion-button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq1">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                >
+                    Apa saja persyaratan yang harus dipenuhi?
+                </button>
 
-                        Bagaimana cara mengajukan layanan SI MIKE SU?
+            </h2>
 
-                    </button>
 
-                </h2>
+            <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion"
+            >
 
-                <div id="faq1"
-                     class="accordion-collapse collapse show"
-                     data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
 
-                    <div class="accordion-body">
-
-                        Masyarakat dapat mengisi formulir permohonan secara online melalui Portal SIMIKESU kemudian melengkapi persyaratan yang diminta.
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- FAQ 2 -->
-            <div class="accordion-item mb-3 border rounded-4">
-
-                <h2 class="accordion-header">
-
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq2">
-
-                        Apa saja persyaratan yang harus dipenuhi?
-
-                    </button>
-
-                </h2>
-
-                <div id="faq2"
-                     class="accordion-collapse collapse"
-                     data-bs-parent="#faqAccordion">
-
-                    <div class="accordion-body">
-
-                        Pemohon perlu menyiapkan surat permohonan, identitas penanggung jawab, serta materi tayang sesuai ketentuan yang berlaku.
-
-                    </div>
+                    Pemohon perlu mengisi data pemohon dan data kegiatan
+                    dengan lengkap serta mengunggah dokumen yang diperlukan
+                    sesuai dengan ketentuan layanan SIMIKESU.
 
                 </div>
 
             </div>
 
-            <!-- FAQ 3 -->
-            <div class="accordion-item mb-3 border rounded-4">
+        </div>
 
-                <h2 class="accordion-header">
 
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq3">
+        <!-- FAQ 3 -->
+        <div class="accordion-item mb-3">
 
-                        Bagaimana cara mengetahui status permohonan?
+            <h2 class="accordion-header" id="headingThree">
 
-                    </button>
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                >
+                    Bagaimana cara mengetahui status permohonan?
+                </button>
 
-                </h2>
+            </h2>
 
-                <div id="faq3"
-                     class="accordion-collapse collapse"
-                     data-bs-parent="#faqAccordion">
 
-                    <div class="accordion-body">
+            <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion"
+            >
 
-                        Status permohonan dapat dipantau melalui menu Tracking menggunakan nomor registrasi yang diperoleh saat pengajuan.
+                <div class="accordion-body">
 
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- FAQ 4 -->
-            <div class="accordion-item mb-3 border rounded-4">
-
-                <h2 class="accordion-header">
-
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq4">
-
-                        Format materi apa yang dapat diunggah?
-
-                    </button>
-
-                </h2>
-
-                <div id="faq4"
-                     class="accordion-collapse collapse"
-                     data-bs-parent="#faqAccordion">
-
-                    <div class="accordion-body">
-
-                        Materi dapat berupa video, gambar, maupun media publikasi lainnya sesuai dengan ketentuan teknis SIMIKESU.
-
-                    </div>
+                    Status permohonan dapat diketahui melalui fitur
+                    <strong>Tracking Permohonan</strong> dengan memasukkan
+                    nomor permohonan yang diperoleh setelah pengajuan berhasil.
 
                 </div>
 
             </div>
 
-            <!-- FAQ 5 -->
-            <div class="accordion-item border rounded-4">
+        </div>
 
-                <h2 class="accordion-header">
 
-                    <button class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#faq5">
+        <!-- FAQ 4 -->
+        <div class="accordion-item mb-3">
 
-                        Apakah layanan SIMIKESU dikenakan biaya?
+            <h2 class="accordion-header" id="headingFour">
 
-                    </button>
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                >
+                    Format materi apa yang dapat diunggah?
+                </button>
 
-                </h2>
+            </h2>
 
-                <div id="faq5"
-                     class="accordion-collapse collapse"
-                     data-bs-parent="#faqAccordion">
 
-                    <div class="accordion-body">
+            <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion"
+            >
 
-                        Informasi mengenai biaya atau ketentuan penggunaan layanan akan mengikuti kebijakan yang ditetapkan oleh Dinas Komunikasi dan Informatika Provinsi Sumatera Utara.
+                <div class="accordion-body">
 
-                    </div>
+                    Materi yang dapat diunggah meliputi dokumen pendukung,
+                    gambar, dan video sesuai dengan format serta ukuran file
+                    yang telah ditentukan pada halaman upload materi.
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item mb-3">
+
+            <h2 class="accordion-header" id="headingFive">
+
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                >
+                    Apakah layanan SIMIKESU dikenakan biaya?
+                </button>
+
+            </h2>
+
+
+            <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#faqAccordion"
+            >
+
+                <div class="accordion-body">
+
+                    Informasi mengenai biaya layanan mengikuti ketentuan yang
+                    berlaku pada layanan SIMIKESU. Pemohon dapat melihat
+                    informasi dan ketentuan layanan pada portal.
 
                 </div>
 
@@ -178,4 +215,4 @@
 
     </div>
 
-</section>
+</div>

@@ -1,69 +1,107 @@
-<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+<nav class="navbar navbar-expand-lg">
 
     <div class="container">
-<a class="navbar-brand d-flex align-items-center" href="index.php">
 
-    <img src="assets/images/logo-sumut.png"
-         alt="Logo Sumatera Utara"
-         class="navbar-logo me-3">
+        <a class="navbar-brand d-flex align-items-center" href="/simikesu/index.php">
 
-    <div>
+            <img
+                src="/simikesu/assets/images/logo-sumut.png"
+                class="navbar-logo me-4"
+                alt="Logo Sumatera Utara"
+            >
 
-        <h4 class="mb-0 fw-bold text-primary">
-            SI MIKE SU
-        </h4>
+            <div>
 
-        <small class="text-muted">
-            Sistem Mobil Informasi Keliling Elektronik
-        </small>
+                <h3 class="mb-0">
+                    SI MIKE SU
+                </h3>
 
-    </div>
+                <small>
+                    Sistem Mobil Informasi Keliling Elektronik
+                </small>
 
-</a>
+            </div>
 
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
 
             <span class="navbar-toggler-icon"></span>
 
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+
+        <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+        >
 
             <ul class="navbar-nav ms-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">Beranda</a>
+
+                    <a
+                        class="nav-link"
+                        href="/simikesu/index.php"
+                    >
+                        Beranda
+                    </a>
+
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/about.php">Tentang</a>
-                </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/services.php">Layanan</a>
+
+                    <a
+                        class="nav-link"
+                        href="/simikesu/pages/about.php"
+                    >
+                        Tentang
+                    </a>
+
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/news.php">Berita</a>
-                </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/gallery.php">Galeri</a>
+
+                    <a
+                        class="nav-link"
+                        href="/simikesu/pages/services.php"
+                    >
+                        Layanan
+                    </a>
+
                 </li>
 
+
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/contact.php">Kontak</a>
+
+                    <a
+                        class="nav-link"
+                        href="/simikesu/pages/contact.php"
+                    >
+                        Kontak
+                    </a>
+
                 </li>
 
             </ul>
 
-            <a href="pages/apply.php" class="btn btn-primary ms-lg-3">
 
+            <a
+                href="/simikesu/pages/apply.php"
+                class="btn btn-primary ms-lg-3"
+            >
                 Ajukan Permohonan
-
             </a>
 
         </div>

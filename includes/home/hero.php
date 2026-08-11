@@ -11,11 +11,11 @@
             <!-- LEFT -->
             <div class="col-lg-6">
 
-                <span class="badge bg-primary px-3 py-2 mb-3">
+                <span class="badge bg-primary px-3 py-2 mb-4">
                     Portal Layanan Publik
                 </span>
 
-                <h1 class="hero-title mb-3">
+                <h1 class="hero-title mb-4">
                     SI MIKE SU
                 </h1>
 
@@ -45,66 +45,7 @@
 
                 </div>
 
-                <div class="row g-3">
-
-                    <div class="col-6 col-md-3">
-
-                        <div class="card text-center p-3">
-
-                            <h4 class="fw-bold text-primary mb-1">
-                                150+
-                            </h4>
-
-                            <small>Permohonan</small>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-6 col-md-3">
-
-                        <div class="card text-center p-3">
-
-                            <h4 class="fw-bold text-primary mb-1">
-                                98%
-                            </h4>
-
-                            <small>Pelayanan</small>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-6 col-md-3">
-
-                        <div class="card text-center p-3">
-
-                            <h4 class="fw-bold text-primary mb-1">
-                                33
-                            </h4>
-
-                            <small>Kab/Kota</small>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-6 col-md-3">
-
-                        <div class="card text-center p-3">
-
-                            <h4 class="fw-bold text-primary mb-1">
-                                24 Jam
-                            </h4>
-
-                            <small>Layanan</small>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+                
             </div>
 
             <!-- RIGHT -->

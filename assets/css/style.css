@@ -1,748 +1,745 @@
 /* ===========================================================
    PORTAL LAYANAN PUBLIK SIMIKESU
-   Design System v1.0
+   DESIGN SYSTEM
 =========================================================== */
 
-/* Google Font */
-body{
-    font-family:'Poppins',sans-serif;
-    background:#F8FAFC;
-    color:#212529;
-    overflow-x:hidden;
+:root {
+    --primary: #0B3D91;
+    --secondary: #D4A017;
+    --white: #FFFFFF;
+    --light: #F8FAFC;
+    --dark: #212529;
+    --border: #DEE2E6;
 }
 
-/* ===========================
-   COLOR
-=========================== */
 
-:root{
+/* ===========================================================
+   GLOBAL
+=========================================================== */
 
-    --primary:#0B3D91;
-    --secondary:#D4A017;
-    --white:#FFFFFF;
-    --light:#F8FAFC;
-    --dark:#212529;
-    --border:#DEE2E6;
-
+html {
+    scroll-behavior: smooth;
 }
 
-/* ===========================
-   LINK
-=========================== */
-
-a{
-
-    text-decoration:none;
-
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    overflow-x: hidden;
 }
 
-/* ===========================
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ===========================================================
    SECTION
-=========================== */
+=========================================================== */
 
-section{
-
-    padding:90px 0;
-
+section {
+    padding: 80px 0;
 }
 
-/* ===========================
-   TITLE
-=========================== */
 
-.section-title{
-
-    font-size:2.2rem;
-
-    font-weight:700;
-
-    color:var(--primary);
-
-}
-
-.section-subtitle{
-
-    color:#6c757d;
-
-}
-
-/* ===========================
-   BUTTON
-=========================== */
-
-.btn-primary{
-
-    background:var(--primary);
-
-    border:none;
-
-    border-radius:12px;
-
-    padding:12px 28px;
-
-}
-
-.btn-primary:hover{
-
-    background:var(--secondary);
-
-}
-
-/* ===========================
-   CARD
-=========================== */
-
-.card{
-
-    border:none;
-
-    border-radius:18px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-}
-
-/* ===========================
-   NAVBAR
-=========================== */
-
-.navbar{
-
-    padding:18px 0;
-
-}
-
-.nav-link{
-
-    font-weight:500;
-
-}
-
-.nav-link:hover{
-
-    color:var(--primary);
-
-}
-
-/* ===========================================
-   HERO
-=========================================== */
-
-.hero{
-
-    min-height:100vh;
-
-    display:flex;
-
-    align-items:center;
-
-    background:linear-gradient(135deg,#F8FAFC,#EAF2FF);
-
-}
-
-.hero h1{
-
-    font-size:4rem;
-
-    font-weight:700;
-
-    color:var(--primary);
-
-}
-
-.hero .lead{
-
-    font-size:1.15rem;
-
-    line-height:1.8;
-
-}
-
-.hero img{
-
-    max-width:100%;
-
-    animation:float 5s ease-in-out infinite;
-
-}
-
-@keyframes float{
-
-0%{
-transform:translateY(0px);
-}
-
-50%{
-transform:translateY(-12px);
-}
-
-100%{
-transform:translateY(0px);
-}
-
-}
-
-/* ===========================================
+/* ===========================================================
    CONTAINER
-=========================================== */
+=========================================================== */
 
-.container{
-
-    max-width:1200px;
-
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* ===========================================
-   IMAGE
-=========================================== */
 
-img{
+/* ===========================================================
+   TITLE
+=========================================================== */
 
-    max-width:100%;
-
-    display:block;
-
-}
-
-/* ===========================================
-   TRANSITION
-=========================================== */
-
-*{
-
-    transition:.3s ease;
-
-}
-
-/* ===========================================
-   SECTION SPACING MOBILE
-=========================================== */
-
-@media(max-width:768px){
-
-section{
-
-    padding:70px 0;
-
-}
-
-.hero{
-
-    text-align:center;
-
-}
-
-.hero h1{
-
-    font-size:2.5rem;
-
-}
-
-.section-title{
-
-    font-size:1.8rem;
-
-}
-
-}
-
-/* ===========================================
-   SERVICES
-=========================================== */
-
-#services{
-
-    background:#FFFFFF;
-
-}
-
-.service-card{
-
-    border:none;
-
-    border-radius:20px;
-
-    transition:.35s;
-
-}
-
-.service-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-.service-icon{
-
-    width:80px;
-
-    height:80px;
-
-    margin:auto;
-
-    border-radius:50%;
-
-    background:#EEF4FF;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
-.service-icon i{
-
-    font-size:2rem;
-
-    color:var(--primary);
-
-}
-
-.service-card p{
-
-    color:#6c757d;
-
-    line-height:1.7;
-
-}
-
-/* ===========================================
-   ABOUT
-=========================================== */
-
-#about{
-
-    background:#F8FAFC;
-
-}
-
-#about img{
-
-    border-radius:20px;
-
-}
-
-#about p{
-
-    line-height:1.9;
-
-    color:#6c757d;
-
-}
-
-#about h6{
-
-    margin-bottom:5px;
-
-}
-/* ===========================================
-   FLOW
-=========================================== */
-
-#flow{
-
-    background:#ffffff;
-
-}
-
-.flow-card{
-
-    padding:30px 15px;
-
-}
-
-.flow-icon{
-
-    width:90px;
-
-    height:90px;
-
-    margin:auto;
-
-    margin-bottom:20px;
-
-    border-radius:50%;
-
-    background:#EEF4FF;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
-.flow-icon i{
-
-    font-size:2rem;
-
-    color:var(--primary);
-
-}
-
-.flow-number{
-
-    display:inline-block;
-
-    background:var(--secondary);
-
-    color:#fff;
-
-    padding:5px 15px;
-
-    border-radius:30px;
-
-    margin-bottom:15px;
-
-    font-weight:600;
-
-}
-
-.flow-card h6{
-
-    font-weight:600;
-
-}
-
-/* ===========================================
-   REQUIREMENTS
-=========================================== */
-
-#requirements{
-
-    background:#F8FAFC;
-
-}
-
-.requirement-card{
-
-    border:none;
-
-    border-radius:20px;
-
-}
-
-.requirement-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.requirement-card p{
-
-    color:#6c757d;
-
-    line-height:1.8;
-
-}
-
-/* ===========================================
-   SCHEDULE
-=========================================== */
-
-#schedule{
-
-    background:#ffffff;
-
-}
-
-#schedule table{
-
-    margin-bottom:0;
-
-}
-
-#schedule th{
-
-    color:var(--primary);
-
-}
-
-#schedule td{
-
-    height:55px;
-
-    vertical-align:middle;
-
-    font-weight:500;
-
-}
-/* ===========================================
-   NEWS
-=========================================== */
-
-#news{
-
-    background:#F8FAFC;
-
-}
-
-.news-card{
-
-    overflow:hidden;
-
-    border:none;
-
-    border-radius:20px;
-
-}
-
-.news-card img{
-
-    height:230px;
-
-    object-fit:cover;
-
-}
-
-.news-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-.news-card .card-title{
-
-    font-size:1.15rem;
-
-    font-weight:600;
-
-}
-
-.news-card .card-text{
-
-    color:#6c757d;
-
-    line-height:1.8;
-
-}
-
-/* ===========================================
-   GALLERY
-=========================================== */
-
-#gallery{
-
-    background:#ffffff;
-
-}
-
-.gallery-card{
-
-    overflow:hidden;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-}
-
-.gallery-card img{
-
-    width:100%;
-
-    height:280px;
-
-    object-fit:cover;
-
-    transition:.4s;
-
-}
-
-.gallery-card:hover img{
-
-    transform:scale(1.08);
-
-}
-/* ===========================================
-   FAQ
-=========================================== */
-
-#faq{
-
-    background:#F8FAFC;
-
-}
-
-.accordion-item{
-
-    border:none;
-
-    overflow:hidden;
-
-}
-
-.accordion-button{
-
-    font-weight:600;
-
-    padding:20px;
-
-}
-
-.accordion-button:not(.collapsed){
-
-    background:#EEF4FF;
-
-    color:var(--primary);
-
-    box-shadow:none;
-
-}
-
-.accordion-button:focus{
-
-    box-shadow:none;
-
-}
-
-.accordion-body{
-
-    color:#6c757d;
-
-    line-height:1.8;
-
-}
-
-/* ===========================================
-   FOOTER
-=========================================== */
-
-#footer{
-
-    background:#0B3D91;
-
-    color:#ffffff;
-
-    padding:80px 0 30px;
-
-}
-
-#footer h5{
-
-    margin-bottom:20px;
-
-}
-
-#footer p{
-
-    color:rgba(255,255,255,.85);
-
-    line-height:1.8;
-
-}
-
-#footer ul{
-
-    padding:0;
-
-}
-
-#footer li{
-
-    list-style:none;
-
-}
-
-#footer a{
-
-    color:rgba(255,255,255,.85);
-
-    text-decoration:none;
-
-}
-
-#footer a:hover{
-
-    color:#D4A017;
-
-}
-
-#footer hr{
-
-    border-color:rgba(255,255,255,.2);
-
-}
-/* ===========================================
-   HERO TITLE
-=========================================== */
-
-.hero-title{
-
-    font-size: clamp(3rem, 6vw, 5rem);
-
-    font-weight: 1000;
-
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
     color: var(--primary);
-
-    line-height: 1.1;
-
-    white-space: nowrap;
-
-    letter-spacing: -2px;
-
 }
-/* ===========================================
+
+.section-subtitle {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+
+/* ===========================================================
+   BUTTON
+=========================================================== */
+
+.btn-primary {
+    background: var(--primary);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 28px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+}
+
+
+/* ===========================================================
    NAVBAR
-=========================================== */
+=========================================================== */
 
-.navbar{
+.navbar {
+    background: #FFFFFF;
+    min-height: 95px;
+    padding: 10px 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .05);
+}
 
-    padding:10px 0;
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 
-    min-height:110px;
+.navbar-logo {
+    width: 110px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.navbar-brand h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0;
+    line-height: 1;
+}
+
+.navbar-brand small {
+    display: block;
+    margin-top: 5px;
+    font-size: .85rem;
+    color: #666;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary);
+}
+
+.navbar .btn {
+    padding: 11px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+/* ===========================================================
+   HERO
+=========================================================== */
+
+.hero {
+    min-height: 68vh;
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #F8FAFC,
+        #EAF2FF
+    );
+
+    padding: 55px 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.15;
+}
+
+.hero .lead {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 
 }
 
-.navbar-brand{
 
-    display:flex;
+/* ===========================================================
+   HERO TITLE
+=========================================================== */
 
-    align-items:center;
+.hero-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
 
-    gap:18px;
 
-    text-decoration:none;
+/* ===========================================================
+   SERVICES
+=========================================================== */
+
+#services {
+    background: #FFFFFF;
+    padding: 85px 0;
+}
+
+.service-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+
+    background: #EEF4FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.service-card p {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+
+/* ===========================================================
+   ABOUT
+=========================================================== */
+
+#about {
+    background: #F8FAFC;
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+#about .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#about .row {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
+#about .col-lg-6 {
+    width: 50%;
+}
+
+#about .col-lg-6:first-child {
+    padding-right: 30px;
+}
+
+#about .col-lg-6:last-child {
+    padding-left: 30px;
+}
+
+#about img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+#about .section-title {
+    color: var(--primary);
+    margin-bottom: 25px;
+}
+
+#about p {
+    color: #6c757d;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#about h6 {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+#about .d-flex {
+    align-items: flex-start;
+}
+
+#about .bi-check-circle-fill {
+    flex-shrink: 0;
+}
+
+
+/* ===========================================================
+   ABOUT MOBILE
+=========================================================== */
+
+@media (max-width: 991px) {
+
+    #about .row {
+        display: block;
+    }
+
+    #about .col-lg-7 {
+        width: 100%;
+    }
+/* JARAK GAMBAR DAN TEKS */
+#about .row {
+    --bs-gutter-x: 6rem;
+}
+
+
+    #about .col-lg-7:first-child,
+    #about .col-lg-7:last-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #about img {
+        margin-bottom: 35px;
+    }
 
 }
 
-.navbar-logo{
 
-    width:95px;
+/* ===========================================================
+   FLOW
+=========================================================== */
 
-    height:95px;
+#flow {
+    background: #FFFFFF;
+    padding: 85px 0;
+}
 
-    object-fit:contain;
+.flow-card {
+    padding: 25px 15px;
+}
 
-    flex-shrink:0;
+.flow-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: auto;
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background: #EEF4FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flow-icon i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.flow-number {
+    display: inline-block;
+
+    background: var(--secondary);
+    color: #FFFFFF;
+
+    padding: 5px 15px;
+
+    border-radius: 30px;
+
+    margin-bottom: 15px;
+
+    font-weight: 600;
+}
+
+.flow-card h6 {
+    font-weight: 600;
+}
+
+
+/* ===========================================================
+   REQUIREMENTS
+=========================================================== */
+
+#requirements {
+    background: #F8FAFC;
+    padding: 85px 0;
+}
+
+.requirement-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.requirement-card:hover {
+    transform: translateY(-8px);
+}
+
+.requirement-card p {
+    color: #6c757d;
+    line-height: 1.8;
+}
+
+
+/* ===========================================================
+   FAQ
+=========================================================== */
+
+#faq {
+    background: #F8FAFC;
+    padding: 85px 0;
+}
+
+.accordion-item {
+    border: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #EEF4FF;
+    color: var(--primary);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+/* ===========================================================
+   FOOTER
+=========================================================== */
+
+#footer {
+    background: var(--primary);
+    color: #FFFFFF;
+    padding: 70px 0 25px;
+}
+
+#footer .row {
+    align-items: flex-start;
+}
+
+#footer .col-lg-6 {
+    padding: 0 35px;
+}
+
+#footer img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+#footer h4,
+#footer h5 {
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#footer small {
+    color: rgba(255, 255, 255, .75);
+}
+
+#footer p {
+    color: rgba(255, 255, 255, .85);
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+#footer a {
+    color: #FFFFFF;
+}
+
+#footer a:hover {
+    color: var(--secondary);
+}
+
+#footer i {
+    color: #FFFFFF;
+}
+
+#footer hr {
+    border-color: rgba(255, 255, 255, .2);
+    margin: 40px 0 25px;
+}
+
+#footer .text-center p {
+    margin: 0;
+    color: rgba(255, 255, 255, .8);
+    font-size: .95rem;
+}
+
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 65px 0;
+    }
+
+    .navbar {
+        min-height: 80px;
+    }
+
+    .navbar-logo {
+        width: 90px;
+        height: 65px;
+    }
+
+    .navbar-brand h3 {
+        font-size: 1.6rem;
+    }
+
+    .navbar-brand small {
+        font-size: .75rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+        white-space: normal;
+        letter-spacing: -1px;
+    }
+
+    .hero img {
+        margin: 35px auto 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    #services,
+    #about,
+    #flow,
+    #requirements,
+    #faq {
+        padding: 70px 0;
+    }
+
+    #about .col-lg-6:first-child,
+    #about .col-lg-6:last-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #about img {
+        margin-bottom: 30px;
+
+    }
+
+    #footer .col-lg-6 {
+        padding: 0 15px;
+    }
 
 }
 
-.navbar-brand h3{
+/* ===========================================================
+   FIX JARAK GAMBAR DAN TEKS ABOUT
+=========================================================== */
 
-    margin:0;
+#about .row {
+    display: flex !important;
+    align-items: center !important;
+    gap: 60px !important;
+}
 
-    font-size:2rem;
+#about .row > .col-lg-6 {
+    flex: 0 0 calc(50% - 30px) !important;
+    max-width: calc(50% - 30px) !important;
+}
 
-    font-weight:700;
+#about .row > .col-lg-6:first-child,
+#about .row > .col-lg-6:last-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 
-    color:var(--primary);
 
-    line-height:1.1;
+/* MOBILE */
+@media (max-width: 991px) {
+
+    #about .row {
+        display: block !important;
+    }
+
+    #about .row > .col-lg-6 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    #about .row > .col-lg-6:first-child {
+        margin-bottom: 35px;
+    }
 
 }
 
-.navbar-brand small{
+/* ===========================================================
+   FIX FINAL ABOUT
+   - Gambar tetap kiri
+   - Konten tetap kanan
+   - Keunggulan menjadi 2 kolom
+   - Tidak memengaruhi section lain
+=========================================================== */
 
-    display:block;
+/* BARIS UTAMA ABOUT */
+#about > .container > .row {
+    display: flex !important;
+    align-items: center !important;
+    gap: 60px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 
-    font-size:.85rem;
+/* KOLOM GAMBAR & KONTEN */
+#about > .container > .row > .col-lg-6 {
+    flex: 0 0 calc(50% - 30px) !important;
+    max-width: calc(50% - 30px) !important;
+    width: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 
-    color:#6c757d;
+/* KEUNGGULAN: 2 KOLOM */
+#about .row.g-4 {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 28px 40px !important;
+    margin: 0 !important;
+}
 
-    line-height:1.3;
+/* MASING-MASING KEUNGGULAN */
+#about .row.g-4 > .col-sm-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+/* ICON KEUNGGULAN */
+#about .row.g-4 .bi-check-circle-fill {
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+/* JUDUL KEUNGGULAN */
+#about .row.g-4 h6 {
+    margin-bottom: 4px !important;
+}
+
+/* DESKRIPSI KEUNGGULAN */
+#about .row.g-4 small {
+    line-height: 1.6;
+}
+
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width: 991px) {
+
+    #about > .container > .row {
+        display: block !important;
+    }
+
+    #about > .container > .row > .col-lg-6 {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 35px;
+    }
+
+    #about .row.g-4 {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
 
 }

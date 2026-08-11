@@ -1,0 +1,268 @@
+/* ===========================================================
+   SIMIKESU - APPLY PAGE
+=========================================================== */
+
+.apply-page {
+    min-height: 100vh;
+    background: #F8FAFC;
+    padding: 60px 0 80px;
+}
+
+
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+.apply-page .section-title {
+    color: var(--primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.apply-page .section-subtitle {
+    color: #6c757d;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* ===========================================================
+   FORM CARD
+=========================================================== */
+
+.apply-card {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ===========================================================
+   STEP
+=========================================================== */
+
+.apply-step {
+    display: none;
+}
+
+.apply-step.active {
+    display: block;
+}
+
+
+/* ===========================================================
+   STEP HEADER
+=========================================================== */
+
+.apply-step-header {
+    margin-bottom: 30px;
+}
+
+.apply-step-header h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.apply-step-header p {
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* ===========================================================
+   TOMBOL KEMBALI
+=========================================================== */
+
+.apply-card .btn-prev {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 18px;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    border-radius: 8px;
+
+    margin-bottom: 28px;
+}
+
+
+/* ===========================================================
+   TOMBOL SELANJUTNYA
+=========================================================== */
+
+.apply-card .btn-next {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 11px 24px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    border-radius: 10px;
+}
+
+
+/* ===========================================================
+   FORM
+=========================================================== */
+
+.apply-card .form-label {
+    color: #212529;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.apply-card .form-control,
+.apply-card .form-select {
+    min-height: 48px;
+
+    border: 1px solid #DEE2E6;
+
+    border-radius: 10px;
+
+    padding: 10px 14px;
+}
+
+.apply-card textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.apply-card .form-control:focus,
+.apply-card .form-select:focus {
+    border-color: var(--primary);
+
+    box-shadow: 0 0 0 0.2rem rgba(11, 61, 145, 0.12);
+}
+
+.apply-card .form-text {
+    color: #6c757d;
+}
+
+
+/* ===========================================================
+   FILE UPLOAD
+=========================================================== */
+
+.apply-card input[type="file"] {
+    min-height: 48px;
+    padding: 10px 12px;
+}
+
+
+/* ===========================================================
+   REVIEW
+=========================================================== */
+
+.review-section {
+    margin-top: 20px;
+}
+
+.review-section h5 {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.review-box {
+    background: #F8FAFC;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    overflow: hidden;
+}
+
+.review-box .fw-semibold {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+/* ===========================================================
+   ALERT
+=========================================================== */
+
+.apply-card .alert {
+    border-radius: 12px;
+    line-height: 1.7;
+}
+
+
+/* ===========================================================
+   BUTTON PRIMARY
+=========================================================== */
+
+.apply-card .btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.apply-card .btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
+
+@media (max-width: 768px) {
+
+    .apply-page {
+        padding: 40px 0 60px;
+    }
+
+    .apply-page .section-title {
+        font-size: 2rem;
+    }
+
+    .apply-card {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .apply-card .btn-prev {
+        margin-bottom: 22px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .apply-page .section-title {
+        font-size: 1.8rem;
+    }
+
+    .apply-card {
+        padding: 20px 15px;
+    }
+
+    .apply-card .btn-prev {
+        padding: 7px 15px;
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+
+}

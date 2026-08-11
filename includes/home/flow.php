@@ -1,128 +1,129 @@
-<!-- ===========================================
-     FLOW SECTION
-=========================================== -->
+<div class="container">
 
-<section id="flow">
+    <div class="text-center mb-5">
 
-    <div class="container">
+        <span class="badge bg-primary px-3 py-2 mb-3">
+            Alur Layanan
+        </span>
 
-        <div class="text-center mb-5">
+        <h2 class="section-title">
+            Alur Pengajuan Layanan SI MIKE SU
+        </h2>
 
-            <span class="badge bg-primary px-3 py-2 mb-3">
-                Alur Layanan
-            </span>
+        <p class="section-subtitle">
+            Ikuti tahapan berikut untuk mengajukan penggunaan
+            Mobil Informasi Keliling Elektronik Sumatera Utara.
+        </p>
 
-            <h2 class="section-title">
-                Alur Pengajuan Layanan SI MIKE SU
-            </h2>
+    </div>
 
-            <p class="section-subtitle">
-                Ikuti tahapan berikut untuk mengajukan penggunaan Mobil Informasi Keliling Elektronik Sumatera Utara.
-            </p>
+
+    <div class="row g-4 justify-content-center">
+
+        <!-- STEP 1 -->
+        <div class="col-lg col-md-4 col-6">
+
+            <div class="flow-card text-center">
+
+                <div class="flow-icon">
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                </div>
+
+                <span class="flow-number">
+                    01
+                </span>
+
+                <h6>
+                    Ajukan Permohonan
+                </h6>
+
+            </div>
 
         </div>
 
-        <div class="row g-4">
 
-            <!-- STEP 1 -->
-            <div class="col-lg-2 col-md-4 col-6">
+        <!-- STEP 2 -->
+        <div class="col-lg col-md-4 col-6">
 
-                <div class="flow-card text-center">
+            <div class="flow-card text-center">
 
-                    <div class="flow-icon">
-                        <i class="bi bi-file-earmark-text-fill"></i>
-                    </div>
-
-                    <span class="flow-number">01</span>
-
-                    <h6>Ajukan Permohonan</h6>
-
+                <div class="flow-icon">
+                    <i class="bi bi-search"></i>
                 </div>
+
+                <span class="flow-number">
+                    02
+                </span>
+
+                <h6>
+                    Verifikasi Berkas
+                </h6>
 
             </div>
 
-            <!-- STEP 2 -->
-            <div class="col-lg-2 col-md-4 col-6">
+        </div>
 
-                <div class="flow-card text-center">
 
-                    <div class="flow-icon">
-                        <i class="bi bi-search"></i>
-                    </div>
+        <!-- STEP 3 -->
+        <div class="col-lg col-md-4 col-6">
 
-                    <span class="flow-number">02</span>
+            <div class="flow-card text-center">
 
-                    <h6>Verifikasi Berkas</h6>
-
+                <div class="flow-icon">
+                    <i class="bi bi-cloud-arrow-up-fill"></i>
                 </div>
+
+                <span class="flow-number">
+                    03
+                </span>
+
+                <h6>
+                    Upload Materi
+                </h6>
 
             </div>
 
-            <!-- STEP 3 -->
-            <div class="col-lg-2 col-md-4 col-6">
+        </div>
 
-                <div class="flow-card text-center">
 
-                    <div class="flow-icon">
-                        <i class="bi bi-calendar-check-fill"></i>
-                    </div>
+        <!-- STEP 4 -->
+        <div class="col-lg col-md-4 col-6">
 
-                    <span class="flow-number">03</span>
+            <div class="flow-card text-center">
 
-                    <h6>Penjadwalan</h6>
-
+                <div class="flow-icon">
+                    <i class="bi bi-broadcast-pin"></i>
                 </div>
+
+                <span class="flow-number">
+                    04
+                </span>
+
+                <h6>
+                    Pelaksanaan
+                </h6>
 
             </div>
 
-            <!-- STEP 4 -->
-            <div class="col-lg-2 col-md-4 col-6">
+        </div>
 
-                <div class="flow-card text-center">
 
-                    <div class="flow-icon">
-                        <i class="bi bi-cloud-arrow-up-fill"></i>
-                    </div>
+        <!-- STEP 5 -->
+        <div class="col-lg col-md-4 col-6">
 
-                    <span class="flow-number">04</span>
+            <div class="flow-card text-center">
 
-                    <h6>Upload Materi</h6>
-
+                <div class="flow-icon">
+                    <i class="bi bi-check-circle-fill"></i>
                 </div>
 
-            </div>
+                <span class="flow-number">
+                    05
+                </span>
 
-            <!-- STEP 5 -->
-            <div class="col-lg-2 col-md-4 col-6">
-
-                <div class="flow-card text-center">
-
-                    <div class="flow-icon">
-                        <i class="bi bi-broadcast-pin"></i>
-                    </div>
-
-                    <span class="flow-number">05</span>
-
-                    <h6>Pelaksanaan</h6>
-
-                </div>
-
-            </div>
-
-            <!-- STEP 6 -->
-            <div class="col-lg-2 col-md-4 col-6">
-
-                <div class="flow-card text-center">
-
-                    <div class="flow-icon">
-                        <i class="bi bi-check-circle-fill"></i>
-                    </div>
-
-                    <span class="flow-number">06</span>
-
-                    <h6>Selesai</h6>
-
-                </div>
+                <h6>
+                    Selesai
+                </h6>
 
             </div>
 
@@ -130,4 +131,4 @@
 
     </div>
 
-</section>
+</div>
