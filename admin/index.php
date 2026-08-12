@@ -13,6 +13,7 @@ $total = 0;
 $menunggu = 0;
 $perbaikan = 0;
 $diterima = 0;
+$ditolak = 0;
 
 
 /* ===========================================================
@@ -23,9 +24,10 @@ $queryStatus = mysqli_query(
     $conn,
     "SELECT
         COUNT(*) AS total,
-        SUM(TRIM(status) = 'Menunggu Verifikasi') AS menunggu,
+        SUM(TRIM(COALESCE(status, '')) = '' OR TRIM(status) = 'Menunggu Verifikasi') AS menunggu,
         SUM(TRIM(status) = 'Perbaikan Berkas') AS perbaikan,
-        SUM(TRIM(status) = 'Diterima') AS diterima
+        SUM(TRIM(status) = 'Diterima') AS diterima,
+        SUM(TRIM(status) = 'Ditolak') AS ditolak
      FROM tb_permohonan"
 );
 
@@ -41,6 +43,8 @@ if ($queryStatus) {
     $perbaikan = (int) ($dataStatus['perbaikan'] ?? 0);
 
     $diterima = (int) ($dataStatus['diterima'] ?? 0);
+
+    $ditolak = (int) ($dataStatus['ditolak'] ?? 0);
 
 }
 
@@ -390,183 +394,88 @@ $queryPermohonan = mysqli_query(
 
                 <!-- STATISTIK -->
 
-                <div class="row g-4 mb-5">
-
+                <div class="row g-4 mb-3">
 
                     <!-- TOTAL -->
-
-                    <div class="col-md-6 col-xl-3">
-
-                        <div class="card stat-card">
-
+                    <div class="col-md-4">
+                        <div class="card stat-card h-100">
                             <div class="card-body">
-
                                 <div class="d-flex justify-content-between align-items-center">
-
                                     <div>
-
-                                        <small class="text-muted">
-
-                                            Total Permohonan
-
-                                        </small>
-
-
-                                        <div class="stat-number">
-
-                                            <?= $total ?>
-
-                                        </div>
-
+                                        <small class="text-muted">Total Permohonan</small>
+                                        <div class="stat-number"><?= $total ?></div>
                                     </div>
-
-
-                                    <div class="stat-icon">
-
-                                        <i class="bi bi-file-earmark-text"></i>
-
-                                    </div>
-
+                                    <div class="stat-icon"><i class="bi bi-file-earmark-text"></i></div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
 
                     <!-- MENUNGGU -->
-
-                    <div class="col-md-6 col-xl-3">
-
-                        <div class="card stat-card">
-
+                    <div class="col-md-4">
+                        <div class="card stat-card h-100">
                             <div class="card-body">
-
                                 <div class="d-flex justify-content-between align-items-center">
-
                                     <div>
-
-                                        <small class="text-muted">
-
-                                            Menunggu Verifikasi
-
-                                        </small>
-
-
-                                        <div class="stat-number">
-
-                                            <?= $menunggu ?>
-
-                                        </div>
-
+                                        <small class="text-muted">Menunggu Verifikasi</small>
+                                        <div class="stat-number"><?= $menunggu ?></div>
                                     </div>
-
-
-                                    <div class="stat-icon">
-
-                                        <i class="bi bi-hourglass-split"></i>
-
-                                    </div>
-
+                                    <div class="stat-icon"><i class="bi bi-hourglass-split"></i></div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
 
                     <!-- PERBAIKAN -->
-
-                    <div class="col-md-6 col-xl-3">
-
-                        <div class="card stat-card">
-
+                    <div class="col-md-4">
+                        <div class="card stat-card h-100">
                             <div class="card-body">
-
                                 <div class="d-flex justify-content-between align-items-center">
-
                                     <div>
-
-                                        <small class="text-muted">
-
-                                            Perbaikan Berkas
-
-                                        </small>
-
-
-                                        <div class="stat-number">
-
-                                            <?= $perbaikan ?>
-
-                                        </div>
-
+                                        <small class="text-muted">Perbaikan Berkas</small>
+                                        <div class="stat-number"><?= $perbaikan ?></div>
                                     </div>
-
-
-                                    <div class="stat-icon">
-
-                                        <i class="bi bi-exclamation-circle"></i>
-
-                                    </div>
-
+                                    <div class="stat-icon"><i class="bi bi-exclamation-circle"></i></div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
-
-                    <!-- DITERIMA -->
-
-                    <div class="col-md-6 col-xl-3">
-
-                        <div class="card stat-card">
-
-                            <div class="card-body">
-
-                                <div class="d-flex justify-content-between align-items-center">
-
-                                    <div>
-
-                                        <small class="text-muted">
-
-                                            Diterima
-
-                                        </small>
-
-
-                                        <div class="stat-number">
-
-                                            <?= $diterima ?>
-
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="stat-icon">
-
-                                        <i class="bi bi-check-circle"></i>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
 
                 </div>
 
+                <div class="row g-4 mb-5">
+
+                    <!-- DITERIMA -->
+                    <div class="col-md-4">
+                        <div class="card stat-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <small class="text-muted">Diterima</small>
+                                        <div class="stat-number"><?= $diterima ?></div>
+                                    </div>
+                                    <div class="stat-icon"><i class="bi bi-check-circle"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DITOLAK -->
+                    <div class="col-md-4">
+                        <div class="card stat-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <small class="text-muted">Ditolak</small>
+                                        <div class="stat-number"><?= $ditolak ?></div>
+                                    </div>
+                                    <div class="stat-icon"><i class="bi bi-x-circle"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
                 <!-- DATA TERBARU -->
 
@@ -643,7 +552,11 @@ $queryPermohonan = mysqli_query(
                                         $row = mysqli_fetch_assoc($queryPermohonan)
                                     ):
 
-                                        $status = trim($row['status']);
+                                        $status = trim($row['status'] ?? '');
+
+                                        if ($status === '') {
+                                            $status = 'Menunggu Verifikasi';
+                                        }
 
 
                                         /* Tentukan warna status */
@@ -655,6 +568,10 @@ $queryPermohonan = mysqli_query(
                                         } elseif ($status === 'Perbaikan Berkas') {
 
                                             $badgeClass = 'bg-danger';
+
+                                        } elseif ($status === 'Ditolak') {
+
+                                            $badgeClass = 'bg-dark';
 
                                         } elseif ($status === 'Menunggu Verifikasi') {
 

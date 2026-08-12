@@ -32,25 +32,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ? trim($_POST['catatan_petugas'])
         : '';
 
-
     /* STATUS YANG DIIZINKAN */
-
     $status_valid = [
-    'Menunggu Verifikasi',
-    'Perbaikan Berkas',
-    'Diterima',
-    'Ditolak'
-];
+        'Menunggu Verifikasi',
+        'Perbaikan Berkas',
+        'Diterima',
+        'Ditolak'
+    ];
 
     if (!in_array($status_baru, $status_valid, true)) {
-
         die('Status permohonan tidak valid.');
-
     }
 
-
     /* UPDATE DATABASE */
-
     $update = mysqli_prepare(
         $conn,
         "UPDATE tb_permohonan
@@ -58,16 +52,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
          WHERE nomor_permohonan = ?"
     );
 
-
     if (!$update) {
-
         die(
             'Gagal menyiapkan perubahan: ' .
             mysqli_error($conn)
         );
-
     }
-
 
     mysqli_stmt_bind_param(
         $update,
@@ -77,22 +67,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $nomor
     );
 
-
     if (!mysqli_stmt_execute($update)) {
-
         die(
             'Gagal menyimpan perubahan: ' .
             mysqli_stmt_error($update)
         );
-
     }
-
 
     mysqli_stmt_close($update);
 
-
     /* KEMBALI KE DETAIL */
-
     header(
         'Location: detail.php?nomor=' .
         urlencode($nomor) .
@@ -101,7 +85,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     exit;
 }
-
 
 /* ===========================================================
    AMBIL DATA PERMOHONAN
@@ -1038,7 +1021,10 @@ mysqli_stmt_close($stmt);
                             </h5>
 
 
-                            <form method="POST">
+                            <form
+                                method="POST"
+                                action="detail.php?nomor=<?= urlencode($nomor) ?>"
+                            >
 
 
                                 <!-- STATUS -->
